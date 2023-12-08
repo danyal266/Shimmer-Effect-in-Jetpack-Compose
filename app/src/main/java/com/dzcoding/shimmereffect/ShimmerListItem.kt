@@ -38,7 +38,7 @@ fun ShimmerListItem(
 ){
     if (isLoading){
         Row (modifier = modifier){
-            Box(modifier = Modifier.size(100.dp).shimmerEffect().padding(16.dp).clip(CircleShape))
+            Box(modifier = Modifier.size(100.dp).clip(CircleShape).shimmerEffect().padding(16.dp))
             Spacer(modifier = Modifier.shimmerEffect().width(16.dp))
             Column (modifier = Modifier.weight(1f)){
                 Box(modifier = Modifier.fillMaxWidth().shimmerEffect().height(16.dp).padding(10.dp))
